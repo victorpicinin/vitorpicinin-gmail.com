@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+
+</head>
+</head>
+<body>
+    <script>
+    window.onload = function () {
+        var target = document.getElementById('target');
+          document.getElementById('askButton1').addEventListener('click', function () {
+            vibrate(200)
+            console.log('200')
+          });
+          document.getElementById('askButton2').addEventListener('click', function () {
+            vibrate(300)
+            console.log('300')
+          });
+          document.getElementById('askButton3').addEventListener('click', function () {
+            vibrate(500)
+            console.log('400')
+          });
+      };
+      function vibrate(time_milisec) {
+        navigator.vibrate(time_milisec);
+      }</script>
+<button id="askButton1">Vibrar 200milisec</button>
+<button id="askButton2">Vibrar 300milisec</button>
+<button id="askButton3">Vibrar 500milisec</button>
+
+</body>
+</html>
