@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+
+</head>
+</head>
+<body>
+    <script>
+    window.onload = function () {
+        var target = document.getElementById('target');
+          document.getElementById('askButton1').addEventListener('click', function () {
+            console.log("Hello");
+            setTimeout(() => { console.log("World!"); }, document.getElementById('sec').value);
+            console.log("Goodbye!");
+          });
+      };
+    </script>
+<label>Digite o tempo em ms: </label>
+<input id='sec'></input>
+<button id="askButton1">Enviar</button>
+
+
+</body>
+</html>
